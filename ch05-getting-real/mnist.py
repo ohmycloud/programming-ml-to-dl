@@ -8,9 +8,9 @@ def load_images(filename):
         # read the header information into a bunch of varables
         _ignored, n_images, columns, rows = struct.unpack('>IIII', f.read(16))
         # read all the pixels into a Numpy array of bytes:
-        all_pixels = np.frombuffer(f.read(), dtype=np.unit8)
+        all_pixels = np.frombuffer(f.read(), dtype=np.uint8)
         # reshape the pixels into a matrix where each line is an image:
-        return all_pixels.reshape(n_images, cloumns * rows)
+        return all_pixels.reshape(n_images, columns * rows)
 
 def prepend_bias(X):
     # insert a column of 1s in the position 0 of X
@@ -31,7 +31,7 @@ def load_labels(filename):
         # read all the labels into a list
         all_labels = f.read()
         # reshape the list of labels into a one-column matrix:
-        return np.frombuffer(all_labels, dtype=np.unit8).reshape(-1, 1)
+        return np.frombuffer(all_labels, dtype=np.uint8).reshape(-1, 1)
 
 def encode_fives(Y):
     # convert all 5s to 1, and everything else yo 0
