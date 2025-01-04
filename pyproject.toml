@@ -17,4 +17,4 @@ dev-dependencies = [
 ]
 
 [tool.uv.workspace]
-members = ["ch02-your-first-learning-program", "ch04-hyperspace", "ch05-getting-real", "ch07-the-final-challenge", "ch10-building-the-network"]
+members = ["ch02-your-first-learning-program", "ch04-hyperspace", "ch05-getting-real", "ch07-the-final-challenge", "ch10-building-the-network", "ch12-how-classifiers-work"]
