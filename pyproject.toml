@@ -8,13 +8,20 @@ dependencies = [
     "matplotlib==3.1.2",
     "seaborn==0.9.0",
     "pandas==2.0.3",
+    "keras>=3.7.0",
 ]
 
 [tool.uv]
 managed = true
-dev-dependencies = [
-    "setuptools>=69.5.1",
-]
+dev-dependencies = ["setuptools>=69.5.1"]
 
 [tool.uv.workspace]
-members = ["ch02-your-first-learning-program", "ch04-hyperspace", "ch05-getting-real", "ch07-the-final-challenge", "ch10-building-the-network", "ch12-how-classifiers-work"]
+members = [
+    "ch02-your-first-learning-program",
+    "ch04-hyperspace",
+    "ch05-getting-real",
+    "ch07-the-final-challenge",
+    "ch10-building-the-network",
+    "ch12-how-classifiers-work",
+    "ch16-deep-network",
+]
