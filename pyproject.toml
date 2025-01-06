@@ -23,5 +23,5 @@ members = [
     "ch07-the-final-challenge",
     "ch10-building-the-network",
     "ch12-how-classifiers-work",
-    "ch16-deep-network",
+    "ch16-deep-network", "ch19-convolutional-neural-network",
 ]
